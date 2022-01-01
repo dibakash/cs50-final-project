@@ -1,0 +1,116 @@
+.right {
+  margin-left: auto;
+}
+
+.adjusted-width {
+  max-width: 300px;
+  margin: 80px auto 0px;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: auto;
+  margin-bottom: 50px !important;
+}
+
+.custom-margin-top {
+  margin-top: 1em;
+}
+.custom-margin-bottom {
+  margin-bottom: 1em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.custom-container {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.pallet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+}
+.pallet b {
+  width: 100px;
+}
+.pallet div {
+  display: flex;
+  gap: 5px;
+  min-width: 300px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.pallet div > span {
+  height: 50px;
+  font-size: 12px;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  background-color: aquamarine;
+  margin: 0 !important;
+  position: relative;
+  width: 60px;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+}
+.pallet button.btn-sm {
+  padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 350px) {
+  .pallet div > span {
+    font-size: 10px;
+    width: 50px;
+  }
+}
+
+.image-holder {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.image-holder img {
+  object-fit: contain;
+  width: 400px;
+}
+
+.make-pallet {
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+}
+
+.make-pallet div > input {
+  height: 60px;
+  width: 80px;
+  padding: 0;
+  border: 0;
+}
+.make-pallet button {
+  padding: 0.5rem 2rem;
+}
+
+.custom-heading {
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+.custom-heading b {
+  font-size: 24px;
+}

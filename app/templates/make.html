@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title%}Home{% endblock %}
+
+{% block main %}
+<h1 class="text-center custom-margin-top custom-margin-bottom">Make a New Pallet</h1>
+
+<div class="custom-container ">
+    <form class="make-pallet" action="/make" method="post">
+        <input type="text" class="form-control" name="pallet_name" placeholder="Pallet name" autocomplete="off">
+        {% if pallet %}
+        <div>
+            <input type="color" name="clr1" value="{{pallet.clr1}}">
+            <input type="color" name="clr2" value="{{pallet.clr2}}">
+            <input type="color" name="clr3" value="{{pallet.clr3}}">
+            <input type="color" name="clr4" value="{{pallet.clr4}}">
+            <input type="color" name="clr5" value="{{pallet.clr5}}">
+        </div>
+        {% endif %}
+        <button type="submit" class="btn btn-sm btn-light my-button">add pallet</button>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title%}Home{% endblock %}
+
+{% block main %}
+<div class="container text-center custom-heading">
+    <h1>Color Pallets Web App</h1>
+    <b>by Dibakash Baruah</b>
+</div>
+<hr>
+<h1 class="text-center custom-margin-top custom-margin-bottom">My Pallets</h1>
+
+<div class="custom-container ">
+
+    {% for pallet in colors %}
+    <form class="pallet" action="/" method="post">
+        <input type="hidden" name="pallet_id" value="{{pallet.id}}">
+        <b>{{pallet.pallet_name}}</b>
+        <div>
+            <span data-clr="{{pallet.clr1}}">{{pallet.clr1}}</span>
+            <span data-clr="{{pallet.clr2}}">{{pallet.clr2}}</span>
+            <span data-clr="{{pallet.clr3}}">{{pallet.clr3}}</span>
+            <span data-clr="{{pallet.clr4}}">{{pallet.clr4}}</span>
+            <span data-clr="{{pallet.clr5}}">{{pallet.clr5}}</span>
+        </div>
+        <button type="submit" class="btn btn-sm btn-light">remove</button>
+    </form>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

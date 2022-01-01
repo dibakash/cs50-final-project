@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block main %}
+<div class="container text-center custom-heading">
+    <h1>Color Pallets Web App</h1>
+    <b>by Dibakash Baruah</b>
+</div>
+<form class="adjusted-width" action="/login" method="post">
+    <div class="form-group">
+        <label for="username" class="form-label mt-4">username</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="username" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="password" class="form-label mt-4">Password</label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary custom-margin-top">Login</button>
+</form>
+{% endblock %}
