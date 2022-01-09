@@ -4,7 +4,8 @@ tests/
 *.pyc
 __pycache__/
 
-instance/
+instance/env
+flask_session/
 
 .pytest_cache/
 .coverage
