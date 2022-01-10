@@ -5,7 +5,6 @@ tests/
 __pycache__/
 
 instance/env
-flask_session/
 
 .pytest_cache/
 .coverage
