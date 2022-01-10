@@ -38,11 +38,9 @@ platformdirs==2.4.1
 ptyprocess==0.7.0
 pycodestyle==2.8.0
 pycparser==2.21
-pypiwin32==223
 python-dotenv==0.19.2
 python-magic==0.4.24
 pyttsx3==2.90
-pywin32==300
 PyYAML==5.4.1
 qrcode==7.3.1
 requests==2.26.0
