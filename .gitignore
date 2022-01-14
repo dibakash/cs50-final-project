@@ -3,8 +3,6 @@ tests/
 *.pyc
 __pycache__/
 
-instance/env
-
 .pytest_cache/
 .coverage
 htmlcov/
