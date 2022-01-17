@@ -10,7 +10,6 @@
 <h1 class="text-center custom-margin-top custom-margin-bottom">My Pallets</h1>
 
 <div class="custom-container ">
-
     {% for pallet in colors %}
     <form class="pallet" action="/" method="post">
         <input type="hidden" name="pallet_id" value="{{pallet.id}}">
