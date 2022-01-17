@@ -14,6 +14,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
+
     # Ensure templates are auto-reloaded
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
@@ -32,8 +33,9 @@ def create_app():
         return response
 
     # Configure session to use filesystem (instead of signed cookies)
-    app.config["SESSION_FILE_DIR"] = mkdtemp()
     app.config["SESSION_PERMANENT"] = False
+    app.config["SESSION_FILE_DIR"] = os.path.join(app.instance_path, "flask_session")
+    app.config["SESSION_FILE_THRESHOLD"] = 5
     app.config["SESSION_TYPE"] = "filesystem"
     Session(app)
 
